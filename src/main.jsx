@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import MainLayout from './Components/Layout/MainLayout';
 import Home from './Components/Pages/Home/Home';
 import CardsFunc from './Components/Pages/Cards/CardsFunc';
+import SummaryCard from './Components/Pages/Summary/SummaryCard';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: '/cardsfunc',
         element: <CardsFunc></CardsFunc>,
+      },
+      {
+        path: '/summarycard',
+        element: <SummaryCard></SummaryCard>,
       },
     ],
   },

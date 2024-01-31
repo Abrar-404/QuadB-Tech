@@ -16,9 +16,14 @@ const CardsFunc = () => {
     <div>
       <div className="">
         <div className="container">
-          <div className="row">
+          <div
+         
+            className="row .ms-1 {
+  margin-left: ($spacer * .25) !important;
+}"
+          >
             {allData?.map(dataAll => (
-              <div className="col-lg-4 col-md-6 col-sm-12">
+              <div key={dataAll?.id} className="col-lg-4 col-md-6 col-sm-12 ">
                 <Cards key={dataAll?.id} dataAll={dataAll}></Cards>
               </div>
             ))}
